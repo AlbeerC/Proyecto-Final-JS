@@ -1,0 +1,124 @@
+.inicio {
+    background: rgba(0, 0, 0, 0.7) url('../img/fondo.png');
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 40rem;
+    padding-top: 5rem;
+    text-align: center;
+
+
+    .titulos {
+        color: $blanco;
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+    margin: 5rem 0;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid $negro;
+
+    @media (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background-color: $principalAzul;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 7rem 3rem;
+        border-radius: 2rem;
+        width: 35rem;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+
+        p {
+            font-size: 2.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: $blanco;
+        }
+
+        .card-titulo {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.destacados {
+    margin-top: 5rem;
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .productos-destacados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+        gap: 5rem;
+        margin-top: 2rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        .producto-destacado {
+            background-color: $principalRojo;  
+            padding: 2rem 5rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+            color: $blanco;
+            -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+            box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+            @media (max-width: 1200px) {
+                padding: 2rem;
+            }
+
+            button {
+                background-color: $principalAzul;
+                color: $blanco;
+                padding: 1rem 3rem;
+                border-radius: 2rem;
+                width: 30rem;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            img {
+                width: 30rem;
+                height: 20rem;
+            }
+        }
+    }
+}

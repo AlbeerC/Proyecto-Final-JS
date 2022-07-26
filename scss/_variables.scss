@@ -1,0 +1,24 @@
+
+// Colores 
+$principalAzul: #13363e;
+$principalRojo: #8b3330;
+$blanco: #ffffff;
+$negro: #000000;
+
+// Fuentes
+$fuenteEnlaces: 'Permanent Marker', cursive;
+$fuenteTitulos: 'Kumar One', cursive;
+
+/* Mixin para responsive */
+
+@mixin responsive ($medida) {
+    @if $medida == pc {
+        @media (max-width: $pc) {
+            @content;
+        }
+    } @else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content;
+        }
+    }
+}

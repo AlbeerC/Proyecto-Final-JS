@@ -1,0 +1,305 @@
+/* Mixin para responsive */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumar+One&display=swap");
+/* Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px; }
+
+h1, h2, h3 {
+  font-weight: bold;
+  font-family: "Kumar One", cursive; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+header {
+  background-color: #13363e;
+  color: #ffffff;
+  padding: 2rem 5rem; }
+  header .headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 768px) {
+      header .headerNav {
+        flex-direction: column;
+        gap: 2rem; } }
+    header .headerNav img {
+      width: 30rem;
+      height: 12rem; }
+    header .headerNav ul {
+      display: flex;
+      align-items: center;
+      gap: 3rem; }
+    header .headerNav li a {
+      color: #ffffff;
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: "Permanent Marker", cursive; }
+      header .headerNav li a:hover {
+        color: #8b3330; }
+
+.inicio {
+  background: rgba(0, 0, 0, 0.7) url("../img/fondo.png");
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 40rem;
+  padding-top: 5rem;
+  text-align: center; }
+  .inicio .titulos {
+    color: #ffffff;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; }
+    @media (max-width: 768px) {
+      .inicio .titulos {
+        font-size: 2rem; } }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+  margin: 5rem 0;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #000000; }
+  @media (max-width: 1200px) {
+    .cards {
+      flex-wrap: wrap; } }
+  .cards .card {
+    background-color: #13363e;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 3rem;
+    border-radius: 2rem;
+    width: 35rem;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000; }
+    .cards .card p {
+      font-size: 2.5rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: #ffffff; }
+    .cards .card .card-titulo {
+      font-weight: bold; }
+
+.destacados {
+  margin-top: 5rem; }
+  .destacados h2 {
+    text-align: center;
+    font-size: 2.5rem; }
+  .destacados .productos-destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 5rem;
+    margin-top: 2rem; }
+    @media (max-width: 768px) {
+      .destacados .productos-destacados {
+        grid-template-columns: 1fr; } }
+    .destacados .productos-destacados .producto-destacado {
+      background-color: #8b3330;
+      padding: 2rem 5rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+      color: #ffffff;
+      -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+      box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); }
+      @media (max-width: 1200px) {
+        .destacados .productos-destacados .producto-destacado {
+          padding: 2rem; } }
+      .destacados .productos-destacados .producto-destacado button {
+        background-color: #13363e;
+        color: #ffffff;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        width: 30rem;
+        cursor: pointer; }
+      .destacados .productos-destacados .producto-destacado p {
+        font-size: 3rem;
+        font-weight: bold; }
+      .destacados .productos-destacados .producto-destacado img {
+        width: 30rem;
+        height: 20rem; }
+
+footer {
+  background-color: #13363e; }
+  footer .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    margin-top: 5rem; }
+    @media (max-width: 768px) {
+      footer .footer {
+        flex-direction: column;
+        gap: 2rem; } }
+    footer .footer img {
+      width: 30rem;
+      height: 12rem; }
+    footer .footer svg {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 2rem; }
+  footer p {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-top: 1rem; }
+    footer p a {
+      color: #8b3330; }
+
+.contacto-inicio {
+  background: rgba(0, 0, 0, 0.7) url("../img/fondo.png");
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 40rem;
+  padding-top: 5rem;
+  text-align: center;
+  color: #ffffff; }
+  .contacto-inicio .contacto-titulos {
+    color: #ffffff;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; }
+    @media (max-width: 768px) {
+      .contacto-inicio .contacto-titulos {
+        font-size: 2rem; } }
+
+.consultas {
+  margin-top: 5rem;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: outset 2px #8b3330;
+  border-radius: 3rem;
+  margin: 5rem 20rem;
+  padding: 3rem; }
+  @media (max-width: 768px) {
+    .consultas {
+      margin: 5rem; } }
+  .consultas h4 {
+    font-size: 2.5rem;
+    font-weight: bold; }
+  .consultas p {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 2rem;
+    color: #8b3330; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+  .formulario .campo {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 1rem 0; }
+    .formulario .campo label {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-bottom: .8rem;
+      font-family: "Kumar One", cursive; }
+    .formulario .campo input {
+      padding: 1rem 2rem;
+      font-size: 2rem; }
+  .formulario .btnEnviar {
+    margin: 2rem auto;
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 3px solid #8b3330;
+    cursor: pointer; }
+
+.inicio-productos {
+  background: rgba(0, 0, 0, 0.7) url("../img/fondo.png");
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 40rem;
+  padding-top: 5rem;
+  text-align: center; }
+  .inicio-productos h1 {
+    color: #ffffff;
+    margin-top: 10rem;
+    font-size: 5rem; }
+
+.lista-productos .marca-titulo {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3rem;
+  border-top: solid 2px #000000; }
+
+.lista-productos .lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  gap: 5rem;
+  margin: 2rem 0; }
+  @media (max-width: 768px) {
+    .lista-productos .lista {
+      grid-template-columns: 1fr; } }
+  .lista-productos .lista .item {
+    background-color: #8b3330;
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    color: #ffffff;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); }
+    @media (max-width: 1200px) {
+      .lista-productos .lista .item {
+        padding: 2rem; } }
+    .lista-productos .lista .item img {
+      width: 30rem;
+      height: 20rem; }
+    .lista-productos .lista .item button {
+      background-color: #13363e;
+      color: #ffffff;
+      padding: 1rem 3rem;
+      border-radius: 2rem;
+      width: 30rem;
+      cursor: pointer; }
+    .lista-productos .lista .item p {
+      font-size: 3rem;
+      font-weight: bold; }
