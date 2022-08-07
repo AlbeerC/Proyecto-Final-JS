@@ -80,11 +80,11 @@
         text-align: center;
         gap: 5rem;
         margin-top: 2rem;
-
+    
         @media (max-width: 768px) {
             grid-template-columns: 1fr;
         }
-
+    
         .producto-destacado {
             background-color: $principalRojo;  
             padding: 2rem 5rem;
@@ -96,29 +96,29 @@
             color: $blanco;
             -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
             box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-
+    
             @media (max-width: 1200px) {
                 padding: 2rem;
             }
-
-            button {
+    
+            a {
                 background-color: $principalAzul;
                 color: $blanco;
                 padding: 1rem 3rem;
                 border-radius: 2rem;
                 width: 30rem;
-                cursor: pointer;
+                font-size: 2rem;
             }
-
+    
             p {
                 font-size: 3rem;
                 font-weight: bold;
             }
-
+    
             img {
                 width: 30rem;
                 height: 20rem;
             }
         }
-    }
+    }    
 }

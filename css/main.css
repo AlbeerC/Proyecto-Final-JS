@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Tamaños media queries */
 /* Mixin para responsive */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One&display=swap");
@@ -49,6 +51,16 @@ header {
       font-family: "Permanent Marker", cursive; }
       header .headerNav li a:hover {
         color: #8b3330; }
+
+.iconCarrito {
+  padding: .5rem;
+  background-color: #8b3330;
+  border-radius: 50%;
+  margin: 2rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  cursor: pointer; }
 
 .inicio {
   background: rgba(0, 0, 0, 0.7) url("../img/fondo.png");
@@ -131,13 +143,13 @@ header {
       @media (max-width: 1200px) {
         .destacados .productos-destacados .producto-destacado {
           padding: 2rem; } }
-      .destacados .productos-destacados .producto-destacado button {
+      .destacados .productos-destacados .producto-destacado a {
         background-color: #13363e;
         color: #ffffff;
         padding: 1rem 3rem;
         border-radius: 2rem;
         width: 30rem;
-        cursor: pointer; }
+        font-size: 2rem; }
       .destacados .productos-destacados .producto-destacado p {
         font-size: 3rem;
         font-weight: bold; }
@@ -231,6 +243,8 @@ footer {
     .formulario .campo input {
       padding: 1rem 2rem;
       font-size: 2rem; }
+    .formulario .campo #mensaje {
+      font-size: 2rem; }
   .formulario .btnEnviar {
     margin: 2rem auto;
     display: block;
@@ -244,6 +258,24 @@ footer {
     border-radius: 5px;
     border: 3px solid #8b3330;
     cursor: pointer; }
+
+.enviado {
+  padding: 2rem 5rem;
+  background-color: #47ad47;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px; }
+
+.error {
+  padding: 2rem 5rem;
+  background-color: #dd1010;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px; }
 
 .inicio-productos {
   background: rgba(0, 0, 0, 0.7) url("../img/fondo.png");
@@ -276,30 +308,31 @@ footer {
   @media (max-width: 768px) {
     .lista-productos .lista {
       grid-template-columns: 1fr; } }
-  .lista-productos .lista .item {
-    background-color: #8b3330;
-    padding: 2rem 5rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
+
+.lista-productos .item {
+  background-color: #8b3330;
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  color: #ffffff;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); }
+  @media (max-width: 1200px) {
+    .lista-productos .item {
+      padding: 2rem; } }
+  .lista-productos .item img {
+    width: 30rem;
+    height: 20rem; }
+  .lista-productos .item button {
+    background-color: #13363e;
     color: #ffffff;
-    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); }
-    @media (max-width: 1200px) {
-      .lista-productos .lista .item {
-        padding: 2rem; } }
-    .lista-productos .lista .item img {
-      width: 30rem;
-      height: 20rem; }
-    .lista-productos .lista .item button {
-      background-color: #13363e;
-      color: #ffffff;
-      padding: 1rem 3rem;
-      border-radius: 2rem;
-      width: 30rem;
-      cursor: pointer; }
-    .lista-productos .lista .item p {
-      font-size: 3rem;
-      font-weight: bold; }
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    width: 30rem;
+    cursor: pointer; }
+  .lista-productos .item p {
+    font-size: 3rem;
+    font-weight: bold; }

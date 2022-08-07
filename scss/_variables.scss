@@ -9,6 +9,10 @@ $negro: #000000;
 $fuenteEnlaces: 'Permanent Marker', cursive;
 $fuenteTitulos: 'Kumar One', cursive;
 
+/* Tamaños media queries */
+$pc: 1200px;
+$tablet: 768px;
+
 /* Mixin para responsive */
 
 @mixin responsive ($medida) {

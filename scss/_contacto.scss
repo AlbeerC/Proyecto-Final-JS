@@ -74,6 +74,10 @@
             padding: 1rem 2rem;
             font-size: 2rem;
         }
+
+        #mensaje {
+            font-size: 2rem;
+        }
     }
 
     .btnEnviar {
@@ -90,4 +94,24 @@
         border: 3px solid $principalRojo;
         cursor: pointer;
     }
+}
+
+.enviado {
+    padding: 2rem 5rem;
+    background-color: #47ad47;
+    color: $blanco;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.error {
+    padding: 2rem 5rem;
+    background-color: #dd1010;
+    color: $blanco;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
 }

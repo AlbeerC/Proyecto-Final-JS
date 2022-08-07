@@ -35,5 +35,15 @@ header {
             }
         }
     }
+}
 
+.iconCarrito { 
+    padding: .5rem;
+    background-color: $principalRojo;
+    border-radius: 50%;
+    margin: 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    cursor: pointer;
 }

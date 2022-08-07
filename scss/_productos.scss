@@ -36,42 +36,41 @@
         @media (max-width: 768px) {
             grid-template-columns: 1fr;
         }
-
-        .item {
-            background-color: $principalRojo;  
-            padding: 2rem 5rem;
-            border-radius: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4rem;
-            color: $blanco;
-            -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-            box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-
-            @media (max-width: 1200px) {
-                padding: 2rem;
-            }
-
-            img {
-                width: 30rem;
-                height: 20rem;
-            }
-
-            button {
-                background-color: $principalAzul;
-                color: $blanco;
-                padding: 1rem 3rem;
-                border-radius: 2rem;
-                width: 30rem;
-                cursor: pointer;
-            }
-
-            p {
-                font-size: 3rem;
-                font-weight: bold;
-            }
-        }
     }
 
+    .item {
+        background-color: $principalRojo;  
+        padding: 2rem 5rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        color: $blanco;
+        -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    
+        @media (max-width: 1200px) {
+            padding: 2rem;
+        }
+    
+        img {
+            width: 30rem;
+            height: 20rem;
+        }
+    
+        button {
+            background-color: $principalAzul;
+            color: $blanco;
+            padding: 1rem 3rem;
+            border-radius: 2rem;
+            width: 30rem;
+            cursor: pointer;
+        }
+    
+        p {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
 }
