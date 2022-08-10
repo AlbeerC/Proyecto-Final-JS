@@ -267,6 +267,9 @@ footer {
   font-weight: bold;
   text-align: center;
   border-radius: 5px; }
+  @media (max-width: 768px) {
+    .enviado {
+      width: 90%; } }
 
 .error {
   padding: 2rem 5rem;
@@ -276,6 +279,9 @@ footer {
   font-weight: bold;
   text-align: center;
   border-radius: 5px; }
+  @media (max-width: 768px) {
+    .error {
+      width: 90%; } }
 
 .inicio-productos {
   background: rgba(0, 0, 0, 0.7) url("../img/fondo.png");

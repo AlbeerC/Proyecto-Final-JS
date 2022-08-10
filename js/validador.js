@@ -5,7 +5,7 @@ const datos = {
     email: "",
     motivo: "",
     mensaje: ""
-}
+} 
 
 const formulario = document.querySelector('.formulario');
 
@@ -16,11 +16,7 @@ formulario.addEventListener("submit", function(e) {
 
     const { nombre, email, motivo, mensaje } = datos;
 
-    if (nombre === "" || email === "" || motivo === "" || mensaje === "" ) {
-        mostrarError();
-    } else {
-        mostrarMensaje();
-    }
+    (nombre === "" || email === "" || motivo === "" || mensaje === "") ? mostrarError() : mostrarMensaje();
 });
 
 

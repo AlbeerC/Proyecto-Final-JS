@@ -104,6 +104,10 @@
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 }
 
 .error {
@@ -114,4 +118,8 @@
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 }

@@ -42,6 +42,8 @@ productos.push (new Producto( "Puma", "R78", 16000));
 productos.push (new Producto( "Puma", "Flyer Flex", 13000));
 productos.push (new Producto( "Puma", "Smash V2", 12000));
 
+console.log(...productos);
+
 
 // Creo la función general para guardar productos en el localstorage
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
