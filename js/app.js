@@ -77,17 +77,6 @@ for (const producto of productos) {
 
 
 
-// Slider con Vegas JS
-$(".inicio").vegas({
-    slides: [
-        { src: "../img/slider1.png" },
-        { src: "../img/slider2.png" },
-        { src: "../img/slider3.png" }
-    ],
-    transition: 'blur'
-});
-
-
 //Slider con Slick JS
 $(".productos-destacados").slick({
     infinity: true,
