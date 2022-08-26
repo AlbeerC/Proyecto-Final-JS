@@ -44,7 +44,7 @@ header {
       header .headerNav {
         flex-direction: column;
         gap: 2rem; } }
-    @media (max-width: 768) {
+    @media (max-width: 768px) {
       header .headerNav .logoProductos {
         margin-right: 12rem; } }
     header .headerNav img {
