@@ -20,6 +20,11 @@ footer {
             width: 6rem;
             height: 6rem;
             margin: 0 2rem;
+            transition: all 500ms ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 

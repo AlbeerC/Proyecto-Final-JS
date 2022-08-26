@@ -44,6 +44,9 @@ header {
       header .headerNav {
         flex-direction: column;
         gap: 2rem; } }
+    @media (max-width: 768) {
+      header .headerNav .logoProductos {
+        margin-right: 12rem; } }
     header .headerNav img {
       width: 30rem;
       height: 12rem; }
@@ -74,7 +77,10 @@ header {
   right: 0; }
   @media (max-width: 768px) {
     .iconCarrito {
-      margin-top: 15rem; } }
+      margin-top: 5rem;
+      margin-right: .5rem;
+      position: fixed;
+      top: 0; } }
   .iconCarrito span {
     color: #ffffff;
     font-size: 2rem;
@@ -194,7 +200,10 @@ footer {
     footer .footer svg {
       width: 6rem;
       height: 6rem;
-      margin: 0 2rem; }
+      margin: 0 2rem;
+      transition: all 500ms ease; }
+      footer .footer svg:hover {
+        transform: scale(1.2); }
   footer p {
     text-align: center;
     font-size: 2rem;
@@ -285,7 +294,8 @@ footer {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 2rem; }
   @media (max-width: 768px) {
     .enviado {
       width: 90%; } }
@@ -297,7 +307,8 @@ footer {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 2rem; }
   @media (max-width: 768px) {
     .error {
       width: 90%; } }

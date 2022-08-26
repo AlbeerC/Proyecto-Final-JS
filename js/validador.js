@@ -20,7 +20,7 @@ formulario.addEventListener("submit", function(e) {
 });
 
 
-  // Mostrar un mensaje de error si hay al menos un campo vacío
+// Mostrar un mensaje de error si hay al menos un campo vacío
 function mostrarError() {
     const alerta = document.createElement("p");
     alerta.innerText = ("Todos los campos son obligatorios");
@@ -33,7 +33,7 @@ function mostrarError() {
 }
 
 
- // Mostrar un mensaje de enviado si se llenó correctamente el formulario
+// Mostrar un mensaje de enviado si se llenó correctamente el formulario
 function mostrarMensaje() {
     const alerta = document.createElement("p");
     alerta.innerText = ("Mensaje enviado correctamente");

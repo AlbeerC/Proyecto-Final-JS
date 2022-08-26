@@ -36,6 +36,7 @@ fetch("../data/stock.json")
         lista.appendChild(item);
 
         // Evento de los botones para agregar al carrito
+
         const btnAgregar = document.getElementById(`agregar${producto.id}`);
         btnAgregar.addEventListener("click", () => {
             añadirAlCarrito(producto.id)
@@ -44,6 +45,7 @@ fetch("../data/stock.json")
     })
 
     // Funcion para agregar productos al carrito. Si ya existe, se suma a la cantidad, si no existe lo agrego
+
     function añadirAlCarrito (prodId) {
 
         const existe = carrito.some (prod => prod.id === prodId)
@@ -66,6 +68,7 @@ fetch("../data/stock.json")
 
 
 // Función para actualizar el carrito cuando se agregue un producto
+
 function actualizarCarrito() {
     contenedorCarrito.innerHTML = ""
 
@@ -86,11 +89,13 @@ function actualizarCarrito() {
     })
 
     // Calcular el precio total teniendo en cuenta las cantidades
+
     contadorCarrito.innerText = carrito.length
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
 
 // Función para eliminar un producto del carrito
+
 function eliminarCarrito(prodId) {
     const item = carrito.find((prod) => prod.id === prodId);
     const i = carrito.indexOf(item);
@@ -99,6 +104,7 @@ function eliminarCarrito(prodId) {
 }
 
 // Evento para que funcione el botón de vaciar el carrito
+
 btnVaciar.addEventListener("click", () => {
     carrito.length = 0;
     actualizarCarrito();
