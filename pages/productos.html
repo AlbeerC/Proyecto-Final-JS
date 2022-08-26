@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers ARG | Productos</title>
     <link rel="icon" href="../img/logo.png">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Sweet Alert 2-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.min.css">
+    <!--Mi CSS-->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -18,210 +23,52 @@
             <li> <a href="../index.html">Inicio</a> </li>
             <li> <a href="productos.html">Productos</a> </li>
             <li> <a href="contacto.html">Contacto</a> </li>
+            <button id="btnCarrito" class="iconCarrito">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="19" r="2" />
+                    <circle cx="17" cy="19" r="2" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                    <span id="contador">0</span>
+            </button>
         </ul>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart iconCarrito" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="6" cy="19" r="2" />
-            <circle cx="17" cy="19" r="2" />
-            <path d="M17 17h-11v-14h-2" />
-            <path d="M6 5l14 1l-1 7h-13" />
-            </svg>
+
+
 
         </nav>
     </header>
 
-    <main>
+    <main class="productos-main">
         <section class="inicio-productos">
             <h1>Nuestros productos</h1>
         </section>
 
         <section class="lista-productos">
 
-            <!--NIKE JORDAN-->
+        </section>
 
-            <div class="nike-jordan">
-                <h2 class="marca-titulo">Nike Jordan</h2>
-                <div class="lista">
-
-                    <div class="item">
-                        <h3>Air Jordan 1 low</h3>
-                        <img src="../img/jordan1.png" alt="">
-                        <p>$42.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Air Jordan 1 University</h3>
-                        <img src="../img/jordan2.png" alt="">
-                        <p>$75.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Air Jordan 6 retro</h3>
-                        <img src="../img/jordan3.png" alt="">
-                        <p>$70.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Air Jordan 4 retro</h3>
-                        <img src="../img/jordan4.png" alt="">
-                        <p>$55.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Air Jordan 11 retro</h3>
-                        <img src="../img/jordan5.png" alt="">
-                        <p>$75.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Air Jordan 1</h3>
-                        <img src="../img/jordan6.png" alt="">
-                        <p>$47.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
+        <div class="contenedorModal">
+            <div class="carritoModal">
+                <div class="modal-arriba">
+                    <h3>Carrito</h3>
+                    <button id="btnCerrar">X</button>
                 </div>
-            </div>
 
-            <!--NIKE-->
+                <div id="contenedorCarrito">
 
-            <div class="nike">
-                <h2 class="marca-titulo">Nike</h2>
-                <div class="lista">
-
-                    <div class="item">
-                        <h3>Nike Air Max 90</h3>
-                        <img src="../img/nike1.png" alt="">
-                        <p>$25000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Nike Air 270</h3>
-                        <img src="../img/nike2.png" alt="">
-                        <p>$22000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Nike Air Force 1 low</h3>
-                        <img src="../img/nike3.png" alt="">
-                        <p>$17000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Nike Air Max 97</h3>
-                        <img src="../img/nike4.png" alt="">
-                        <p>$35.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Nike Vapormax</h3>
-                        <img src="../img/nike5.png" alt="">
-                        <p>$48.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Nike Dunk high</h3>
-                        <img src="../img/nike6.png" alt="">
-                        <p>$38.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
                 </div>
-            </div>
-
-            <!--ADIDAS-->
-
-            <div class="nike">
-                <h2 class="marca-titulo">Adidas</h2>
-                <div class="lista">
-
-                    <div class="item">
-                        <h3>Adidas EQ 21</h3>
-                        <img src="../img/adidas1.png" alt="">
-                        <p>$26.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Adidas Yeezy 350</h3>
-                        <img src="../img/adidas2.png" alt="">
-                        <p>$85.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Adidas Yeezy 700</h3>
-                        <img src="../img/adidas3.png" alt="">
-                        <p>$70.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Adidas Forum</h3>
-                        <img src="../img/adidas4.png" alt="">
-                        <p>$31.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Adidas Yeezy 500</h3>
-                        <img src="../img/adidas5.png" alt="">
-                        <p>$43.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Adidas Superstar</h3>
-                        <img src="../img/adidas6.png" alt="">
-                        <p>$25.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <div class="modal-botones">
+                    <button id="vaciarCarrito" class="boton-agregar">Vaciar carrito</button>
+                    <button onclick="btnAlerta()" id="finalizarCompra" class="finalizar">Finalizar compra</button>
                 </div>
+
             </div>
+        </div>
 
-            <!--PUMA-->
 
-            <div class="nike">
-                <h2 class="marca-titulo">Puma</h2>
-                <div class="lista">
-
-                    <div class="item">
-                        <h3>Puma Softride Enzo nxt</h3>
-                        <img src="../img/puma1.png" alt="">
-                        <p>$17.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Puma R78</h3>
-                        <img src="../img/puma2.png" alt="">
-                        <p>$16.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Puma Flyer Flex</h3>
-                        <img src="../img/puma3.png" alt="">
-                        <p>$13.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-                    <div class="item">
-                        <h3>Puma Smash V2</h3>
-                        <img src="../img/puma4.png" alt="">
-                        <p>$12.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-
-</section>
     </main>
 
 
@@ -260,6 +107,16 @@
         <p>Desarrollado por <a href="https://www.linkedin.com/in/alberto-caminos-5b3961243" target="blank">Alberto Caminos</a></p>
     </footer>
     
+    <!--Font awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--JQuery 3.6.0-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Sweet Alert 2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <!--Slick JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Mi JS-->
     <script src="../js/app.js"></script>
+    <script src="../js/librerias.js"></script>
 </body>
 </html>

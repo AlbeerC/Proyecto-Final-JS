@@ -1,0 +1,125 @@
+.contenedorModal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-arriba {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    button {
+        background-color: $principalAzul;
+        border-radius: 50%;
+        border: 2px solid $principalRojo;
+        color: $blanco;
+        font-weight: bold;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: .7rem;
+    }
+}
+.carritoModal {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    transition: all .5s;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 16px 22px 25px 14px rgba(0,0,0,0.45); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 16px 22px 25px 14px rgba(0,0,0,0.45);
+
+
+    @media (max-width: 768px) {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+.modal-active .carritoModal {
+    margin-top: 0;
+}
+
+.carritoModal h3 {
+    color: $principalAzul;
+    font-family: $fuenteTitulos;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.productoCarrito {
+    border-left: 4px solid $principalRojo;
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+
+    p {
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+    }
+
+}
+.btnEliminar {
+    color: $principalRojo;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.precioProducto {
+    display: inline-block;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 3px solid $principalRojo;
+}
+.modal-botones {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+    button {
+        background-color: $principalAzul;
+        color: $blanco;
+        font-size: 1.6rem;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        border: 2px solid $principalRojo;
+        border-radius: 2rem;
+    }
+}
+
+.btn {
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+    border: none;
+    color: $blanco;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-success {
+    background-color: #28a745;
+}
+.btn-danger {
+    background-color: #dc3545;
+
+
+}

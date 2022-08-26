@@ -1,0 +1,32 @@
+[
+    { "id": 1, "marca": "Air Jordan", "modelo": "1 University", "precio": 75000, "imagen": "../img/jordan1.png", "cantidad": 1 },
+    { "id": 2, "marca": "Air Jordan", "modelo": "1 Low", "precio": 42000, "imagen": "../img/jordan2.png", "cantidad": 1 },
+    { "id": 3, "marca": "Air Jordan", "modelo": "6 Retro", "precio": 70000, "imagen": "../img/jordan3.png", "cantidad": 1 },
+    { "id": 4, "marca": "Air Jordan", "modelo": "4 Retro", "precio": 55000, "imagen": "../img/jordan4.png", "cantidad": 1 },
+    { "id": 5, "marca": "Air Jordan", "modelo": "11 Retro", "precio": 75000, "imagen": "../img/jordan5.png", "cantidad": 1 },
+    { "id": 6, "marca": "Air Jordan", "modelo": "1 Classic", "precio": 47000, "imagen": "../img/jordan6.png", "cantidad": 1 },
+
+    { "id": 7, "marca": "Nike", "modelo": "Air Max 90", "precio": 25000, "imagen": "../img/nike1.png", "cantidad": 1 },
+    { "id": 8, "marca": "Nike", "modelo": "Air 270", "precio": 22000, "imagen": "../img/nike2.png", "cantidad": 1 },
+    { "id": 9, "marca": "Nike", "modelo": "Air force 1 low", "precio": 17000, "imagen": "../img/nike3.png", "cantidad": 1 },
+    { "id": 10, "marca": "Nike", "modelo": "Air max 97", "precio": 35000, "imagen": "../img/nike4.png", "cantidad": 1 },
+    { "id": 11, "marca": "Nike", "modelo": "Vapormax", "precio": 48000, "imagen": "../img/nike5.png", "cantidad": 1 },
+    { "id": 12, "marca": "Nike", "modelo": "Dunk high", "precio": 38000, "imagen": "../img/nike6.png", "cantidad": 1 },
+
+    { "id": 13, "marca": "Adidas", "modelo": "EQ 21", "precio": 26000, "imagen": "../img/adidas1.png", "cantidad": 1 },
+    { "id": 14, "marca": "Adidas", "modelo": "Yeezy 350", "precio": 85000, "imagen": "../img/adidas2.png", "cantidad": 1 },
+    { "id": 15, "marca": "Adidas", "modelo": "Yeezy 700", "precio": 70000, "imagen": "../img/adidas3.png", "cantidad": 1 },
+    { "id": 16, "marca": "Adidas", "modelo": "Forum", "precio": 31000, "imagen": "../img/adidas4.png", "cantidad": 1 },
+    { "id": 17, "marca": "Adidas", "modelo": "Yeezy 500", "precio": 43000, "imagen": "../img/adidas5.png", "cantidad": 1 },
+    { "id": 18, "marca": "Adidas", "modelo": "Superstar", "precio": 25000, "imagen": "../img/adidas6.png", "cantidad": 1 },
+
+    { "id": 19, "marca": "Puma", "modelo": "Softride Enzo NXT", "precio": 17000, "imagen": "../img/puma1.png", "cantidad": 1 },
+    { "id": 20, "marca": "Puma", "modelo": "R78", "precio": 16000, "imagen": "../img/puma2.png", "cantidad": 1 },
+    { "id": 21, "marca": "Puma", "modelo": "Flyer flex", "precio": 13000, "imagen": "../img/puma3.png", "cantidad": 1 },
+    { "id": 22, "marca": "Puma", "modelo": "Smash V2", "precio": 12000, "imagen": "../img/puma4.png", "cantidad": 1 },
+
+    { "id": 23, "marca": "Fila", "modelo": "Axilus Ace Clay", "precio": 24000, "imagen": "../img/fila1.png", "cantidad": 1 },
+    { "id": 24, "marca": "Fila", "modelo": "KR5", "precio": 22000, "imagen": "../img/fila2.png", "cantidad": 1 },
+    { "id": 25, "marca": "Fila", "modelo": "Racer One", "precio": 14000, "imagen": "../img/fila3.png", "cantidad": 1 },
+    { "id": 26, "marca": "Fila", "modelo": "Trend 2.0", "precio": 12000, "imagen": "../img/fila4.png", "cantidad": 1 }
+]

@@ -1,5 +1,5 @@
 .inicio-productos {
-    background: rgba(0, 0, 0, 0.7) url('../img/fondo.png');
+    background: rgba(0, 0, 0, 0.3) url('../img/fondo.png');
     background-size: cover;
     background-position: center center;
     background-blend-mode: darken;
@@ -17,25 +17,16 @@
 
 
 .lista-productos {
-    .marca-titulo {
-        text-align: center;
-        padding-top: 5rem;
-        font-size: 3rem;
-        border-top: solid 2px $negro;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 5rem;
+    padding: 5rem 0;
 
-    .lista {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        text-align: center;
-        gap: 5rem;
-        margin: 2rem 0;
-
-        @media (max-width: 768px) {
-            grid-template-columns: 1fr;
-        }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
     }
 
     .item {
@@ -57,6 +48,11 @@
         img {
             width: 30rem;
             height: 20rem;
+            transition: all .5s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     
         button {
@@ -65,7 +61,14 @@
             padding: 1rem 3rem;
             border-radius: 2rem;
             width: 30rem;
+            font-size: 1.8rem;
             cursor: pointer;
+            font-weight: bold;
+
+            &:hover {
+                background-color: $negro;
+                color: $principalRojo;
+            }
         }
     
         p {

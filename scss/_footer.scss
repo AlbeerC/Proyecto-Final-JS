@@ -1,12 +1,10 @@
 footer {
     background-color: $principalAzul;
-
     .footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 2rem 5rem;
-        margin-top: 5rem;
 
         @media (max-width: 768px) {
             flex-direction: column;
