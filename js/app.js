@@ -42,6 +42,19 @@ fetch("../data/stock.json")
             añadirAlCarrito(producto.id)
         })
 
+        // Alerta en pantalla cuando se agregue algo al carrito
+
+        btnAgregar.addEventListener("click", () => {
+            const alerta = document.createElement("p");
+            alerta.innerText = ("Producto agregado al carrito");
+            alerta.classList.add("prueba-alerta");
+            lista.appendChild(alerta);
+
+            setTimeout(() => {
+                alerta.remove();
+            }, 3000);
+        })
+
     })
 
     // Funcion para agregar productos al carrito. Si ya existe, se suma a la cantidad, si no existe lo agrego

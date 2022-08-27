@@ -9,6 +9,7 @@
     transition: all .5s;
     opacity: 0;
     visibility: hidden;
+    overflow: scroll;
 }
 .modal-active {
     opacity: 1;
@@ -41,8 +42,9 @@
 
 
     @media (max-width: 768px) {
-        height: 90%;
-        width: 90%;
+        margin-right: auto;
+        height: auto;
+        max-width: 90%;
     }
 }
 

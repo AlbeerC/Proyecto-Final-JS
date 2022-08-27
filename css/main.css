@@ -374,6 +374,25 @@ footer {
       font-size: 3rem;
       font-weight: bold; }
 
+.prueba-alerta {
+  background-color: #4ba34b;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: fixed;
+  border-radius: 1rem;
+  font-family: "Kumar One", cursive;
+  margin: 10rem 0 0 5rem;
+  top: 0;
+  left: 0; }
+  @media (max-width: 768px) {
+    .prueba-alerta {
+      padding: 1rem;
+      margin: 0;
+      width: 100%;
+      border-radius: 0; } }
+
 .contenedorModal {
   position: fixed;
   top: 0;
@@ -384,7 +403,8 @@ footer {
   align-items: center;
   transition: all .5s;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  overflow: scroll; }
 
 .modal-active {
   opacity: 1;
@@ -414,8 +434,9 @@ footer {
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 16px 22px 25px 14px rgba(0, 0, 0, 0.45); }
   @media (max-width: 768px) {
     .carritoModal {
-      height: 90%;
-      width: 90%; } }
+      margin-right: auto;
+      height: auto;
+      max-width: 90%; } }
 
 .modal-active .carritoModal {
   margin-top: 0; }
