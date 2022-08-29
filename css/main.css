@@ -54,6 +54,9 @@ header {
       display: flex;
       align-items: center;
       gap: 3rem; }
+      @media (min-width: 768px) {
+        header .headerNav ul .margin-carrito {
+          margin-right: 2rem; } }
     header .headerNav li a {
       color: #ffffff;
       font-size: 2.5rem;
@@ -93,7 +96,6 @@ header {
   .inicio-main .inicio {
     width: 100%;
     height: 40rem;
-    padding-top: 5rem;
     text-align: center;
     background: rgba(0, 0, 0, 0.3) url("../img/fondo.png");
     background-size: cover;
@@ -102,13 +104,16 @@ header {
     .inicio-main .inicio .titulos {
       color: #ffffff;
       font-size: 2.5rem;
+      padding-top: 7rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 3rem; }
       @media (max-width: 768px) {
         .inicio-main .inicio .titulos {
-          font-size: 2rem; } }
+          font-size: 2rem;
+          padding: 0 2rem; } }
   .inicio-main .cards {
     display: flex;
     justify-content: center;
@@ -143,7 +148,7 @@ header {
     margin-top: 5rem; }
     .inicio-main .destacados h2 {
       text-align: center;
-      font-size: 2.5rem; }
+      font-size: 3rem; }
     .inicio-main .destacados .productos-destacados {
       margin-top: 2rem; }
       @media (max-width: 768px) {
@@ -152,7 +157,7 @@ header {
       .inicio-main .destacados .productos-destacados .producto-destacado {
         background-color: #8b3330;
         padding: 2rem 5rem;
-        margin: 0 7rem;
+        margin: 0 15rem;
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -175,13 +180,20 @@ header {
           border-radius: 2rem;
           width: 30rem;
           font-size: 2rem;
+          font-weight: bold;
           text-align: center; }
+          .inicio-main .destacados .productos-destacados .producto-destacado a:hover {
+            color: #8b3330;
+            background-color: #000000; }
         .inicio-main .destacados .productos-destacados .producto-destacado p {
           font-size: 3rem;
           font-weight: bold; }
         .inicio-main .destacados .productos-destacados .producto-destacado img {
           width: 30rem;
-          height: 20rem; }
+          height: 20rem;
+          transition: all .5s ease; }
+          .inicio-main .destacados .productos-destacados .producto-destacado img:hover {
+            transform: scale(1.2); }
 
 footer {
   background-color: #13363e; }
@@ -219,7 +231,7 @@ footer {
   background-blend-mode: darken;
   width: 100%;
   height: 40rem;
-  padding-top: 5rem;
+  padding-top: 7rem;
   text-align: center;
   color: #ffffff; }
   .contacto-inicio .contacto-titulos {
@@ -228,10 +240,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 3rem; }
     @media (max-width: 768px) {
       .contacto-inicio .contacto-titulos {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        padding: 0 2rem; } }
 
 .consultas {
   margin-top: 5rem;
@@ -403,8 +417,10 @@ footer {
   align-items: center;
   transition: all .5s;
   opacity: 0;
-  visibility: hidden;
-  overflow: scroll; }
+  visibility: hidden; }
+  @media (max-width: 768px) {
+    .contenedorModal {
+      overflow: scroll; } }
 
 .modal-active {
   opacity: 1;

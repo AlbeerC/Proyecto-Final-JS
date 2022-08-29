@@ -29,6 +29,13 @@ header {
             display: flex;
             align-items: center;
             gap: 3rem;
+
+            @media (min-width: 768px) {
+                .margin-carrito {
+                    margin-right: 2rem;
+                }
+            }
+
         }
 
         li a {

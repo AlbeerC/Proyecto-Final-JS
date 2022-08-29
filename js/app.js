@@ -52,7 +52,7 @@ fetch("../data/stock.json")
 
             setTimeout(() => {
                 alerta.remove();
-            }, 3000);
+            }, 2000);
         })
 
     })
@@ -127,24 +127,24 @@ btnVaciar.addEventListener("click", () => {
 
 // Modal
 
-const contenedorModal = document.getElementsByClassName("contenedorModal")[0]
-const btnAbrir = document.getElementById("btnCarrito")
-const btnCerrar = document.getElementById("btnCerrar")
-const carritoModal = document.getElementsByClassName("carritoModal")[0]
+const contenedorModal = document.getElementsByClassName("contenedorModal")[0];
+const btnAbrir = document.getElementById("btnCarrito");
+const btnCerrar = document.getElementById("btnCerrar");
+const carritoModal = document.getElementsByClassName("carritoModal")[0];
 
 
 btnAbrir.addEventListener('click', () => {
-    contenedorModal.classList.toggle('modal-active')
+    contenedorModal.classList.toggle('modal-active');
 });
 
 btnCerrar.addEventListener('click', () => {
-    contenedorModal.classList.toggle('modal-active')
+    contenedorModal.classList.toggle('modal-active');
 });
 
 contenedorModal.addEventListener('click', () => {
-    contenedorModal.classList.toggle('modal-active')
+    contenedorModal.classList.toggle('modal-active');
 });
 
 carritoModal.addEventListener('click', (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
 });
