@@ -113,7 +113,7 @@ header {
       @media (max-width: 768px) {
         .inicio-main .inicio .titulos {
           font-size: 2rem;
-          padding: 0 2rem; } }
+          padding: 5rem 2rem 0 2rem; } }
   .inicio-main .cards {
     display: flex;
     justify-content: center;
@@ -234,13 +234,15 @@ footer {
   padding-top: 7rem;
   text-align: center;
   color: #ffffff; }
+  @media (max-width: 768px) {
+    .contacto-inicio {
+      padding: 3rem 2rem 0 2rem; } }
   .contacto-inicio .contacto-titulos {
     color: #ffffff;
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 3rem; }
     @media (max-width: 768px) {
       .contacto-inicio .contacto-titulos {
